@@ -1,0 +1,73 @@
+.au-page {}
+
+.au-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.au-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+}
+
+.au-btn-refresh {
+  background: var(--black2);
+  border: 1px solid var(--black5);
+  color: var(--gray);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  transition: all 0.15s;
+}
+.au-btn-refresh:hover { color: var(--white); border-color: var(--gray); }
+
+.au-num { color: var(--gray2); font-size: 0.8rem; width: 36px; }
+
+.au-avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.au-avatar {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: rgba(29,185,84,0.18);
+  color: var(--green);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.au-muted { color: var(--gray2); }
+
+.au-empty {
+  text-align: center;
+  padding: 40px !important;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.au-tip {
+  margin-top: 16px;
+  font-size: 0.78rem;
+  color: var(--gray2);
+  line-height: 1.6;
+}
+.au-tip code {
+  background: var(--black3);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  color: var(--green);
+}

@@ -1,0 +1,185 @@
+.cart-page { padding: 40px 20px; }
+
+.cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 60vh;
+  color: var(--gray);
+  text-align: center;
+}
+.cart-empty svg { opacity: 0.3; }
+.cart-empty h2 { font-size: 1.4rem; color: var(--white); }
+.cart-empty p { color: var(--gray); }
+.cart-empty .btn-primary { margin-top: 8px; }
+
+.cart-header { margin-bottom: 32px; }
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gray);
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--green); }
+.cart-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 28px;
+  align-items: start;
+}
+
+.cart-items { display: flex; flex-direction: column; gap: 14px; }
+
+.cart-item {
+  background: var(--black2);
+  border: 1px solid var(--black5);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: border-color 0.2s;
+}
+.cart-item:hover { border-color: var(--black5); }
+
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background: var(--black3);
+  flex-shrink: 0;
+}
+
+.cart-item-info { flex: 1; min-width: 0; }
+.cart-item-cat {
+  font-size: 0.7rem;
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.cart-item-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 3px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cart-item-size { font-size: 0.8rem; color: var(--gray); }
+.cart-item-price { font-size: 1rem; font-weight: 700; color: var(--yellow); margin-top: 4px; }
+
+.cart-item-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--black3);
+  border: 1px solid var(--black5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.qty-control button {
+  background: none;
+  color: var(--white);
+  width: 32px; height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.qty-control button:hover { background: var(--black5); }
+.qty-control span {
+  padding: 0 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-width: 32px;
+  text-align: center;
+}
+
+.cart-item-subtotal {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.cart-remove {
+  background: none;
+  color: var(--gray2);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+.cart-remove:hover { color: var(--red); }
+
+/* SUMMARY */
+.cart-summary {
+  background: var(--black2);
+  border: 1px solid var(--black5);
+  border-radius: var(--radius);
+  padding: 24px;
+  position: sticky;
+  top: 84px;
+}
+
+.summary-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.summary-rows { display: flex; flex-direction: column; gap: 8px; }
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: var(--gray);
+  gap: 8px;
+}
+.summary-row span:first-child { flex: 1; }
+
+.summary-divider {
+  height: 1px;
+  background: var(--black5);
+  margin: 16px 0;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.summary-total span:last-child { color: var(--yellow); }
+
+.summary-btn { width: 100%; justify-content: center; padding: 14px; font-size: 1rem; }
+
+@media (max-width: 900px) {
+  .cart-layout { grid-template-columns: 1fr; }
+  .cart-summary { position: static; }
+}
+@media (max-width: 600px) {
+  .cart-item { flex-wrap: wrap; }
+  .cart-item-controls { flex-direction: row; width: 100%; justify-content: space-between; align-items: center; }
+}
