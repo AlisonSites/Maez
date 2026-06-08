@@ -80,6 +80,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .ap-price { color: var(--yellow); font-weight: 600; white-space: nowrap; }

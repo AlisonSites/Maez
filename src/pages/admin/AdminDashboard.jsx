@@ -48,7 +48,7 @@ export default function AdminDashboard() {
         </div>
       )}
       <div className="dash-hint">
-        <p>👋 Bem-vindo ao painel de administração da <strong>Joias Do Kauan</strong>.</p>
+        <p>👋 Bem-vindo ao painel de administração da <strong>MAEZ</strong>.</p>
         <p>Use o menu lateral para gerenciar produtos e tamanhos.</p>
       </div>
     </div>

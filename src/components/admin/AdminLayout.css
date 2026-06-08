@@ -5,12 +5,13 @@
 }
 
 .circulo_admin{
-  background: linear-gradient(120deg, #00af00, #d9ff00, #e20404);
+  border: .2px solid var(--white);
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   display: flex;
   align-self: center;
   justify-content: center;
@@ -102,8 +103,10 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 0.82rem;
-  color: var(--gray);
+  font-size:15px;
+  color: var(--white);
+  font-weight: 700;
+  
 }
 
 .admin-avatar {

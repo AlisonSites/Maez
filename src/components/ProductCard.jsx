@@ -28,7 +28,7 @@ export default function ProductCard({ product, onDetails }) {
         {product.stock <= 0 && <div className="out-badge">Esgotado</div>}
       </div>
       <div className="card-body">
-        <span className="card-category">{product.category}</span>
+        <span className="card-category"> {product.category}</span>
         <h3 className="card-title">{product.title}</h3>
         <div className="card-price">R$ {Number(product.price).toFixed(2).replace('.', ',')}</div>
         <div className="card-actions">

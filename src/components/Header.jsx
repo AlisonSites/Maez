@@ -22,7 +22,10 @@ export default function Header() {
         <Link to="/" className="logo">
           {/* <Music2 size={24} className="logo-icon" /> */}
           {/* <img src={Logo} alt="" /> */}
-          <span className='spanlogo'><span className="logo-accent">Joias </span>Do  <span className="logo-accent-1">Kauan</span></span>
+          <span className='spanlogo'>
+            <img src={Logo} alt="" />
+            {/* <span className="logo-accent">MAEZ</span> */}
+            </span>
         </Link>
 
         <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
@@ -30,7 +33,7 @@ export default function Header() {
           <Link to="/cart" onClick={() => setMenuOpen(false)}>Carrinho</Link>
           {user ? (
             <>
-              {user.email === 'admin@joiasdokauan.com' && (
+              {user.email === 'admin@usemaez.com' && (
                 <Link to="/admin" onClick={() => setMenuOpen(false)}>Admin</Link>
               )}
               <button className="nav-logout" onClick={handleSignOut}>
@@ -49,12 +52,12 @@ export default function Header() {
             <ShoppingCart size={20} />
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
-          {user && user.email === 'admin@joiasdokauan.com' && (
+          {user && user.email === 'admin@usemaez.com' && (
             <Link to="/admin" className="admin-icon-btn">
               <Settings size={20} />
             </Link>
           )}
-          
+
           <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>

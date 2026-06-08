@@ -44,23 +44,23 @@ export default function Home() {
     <div>
       {/* HERO */}
       <section className="hero">
-        <div className="hero-bg">
+        {/* <div className="hero-bg">
           <div className="hero-stripe red"></div>
           <div className="hero-stripe yellow"></div>
           <div className="hero-stripe green"></div>
-        </div>
+        </div> */}
         <div className="container hero-content">
           <div className="hero-tag">Nova Coleção</div>
           <h1 className="hero-title">
-            
+
             <span className="hero-accent">VISTA A </span>
-            MELHOR
-            <br />
-            PRATA DA 
-            <span className="hero-accent-1"> REGIÃO
+            MELHOR MODA <br /> MASCULINA
+            <span className="hero-accent-1"> DA REGIÃO
             </span>
           </h1>
-          <p className="hero-sub">Correntes e acessórios com a alma da prata e ouro. Estilo autêntico, raízes verdadeiras.</p>
+          <p className="hero-sub">Roupa que acompanha seu ritmo,
+            que veste bem, que fala sem exagerar.
+            Moderno, direto, atual para quem entende que estilo é atitude.</p>
           <div className="hero-cta">
             <a href="#produtos" className="btn-primary hero-btn">Ver Produtos</a>
             <a href="#produtos" className="btn-outline hero-btn">Nova Coleção</a>

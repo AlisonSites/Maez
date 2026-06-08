@@ -20,7 +20,7 @@
   background-image: url('../assets/backgroundHero.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.15; /* Apenas a imagem fica com 10% de opacidade */
+  opacity: 0.4; /* Apenas a imagem fica com 10% de opacidade */
   z-index: 1;
 }
 
@@ -74,19 +74,20 @@
 
 .hero-accent {
   color: var(--green);
-  text-shadow: 0 0 40px rgba(29,185,84,0.4);
+  text-shadow: 0 0 40px rgba(15, 219, 87, 0.4);
 }
 .hero-accent-1 {
-  color: var(--red);
-  text-shadow: 0 0 60px rgba(255, 0, 0, 0.589);
+  color: var(--green);
+  text-shadow: 0 0 40px rgba(15, 219, 87, 0.4);
 }
 
 .hero-sub {
   font-size: 1rem;
-  color: var(--gray);
+  color: var(--white);
   max-width: 420px;
   line-height: 1.6;
   margin-bottom: 32px;
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
 }
 
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
@@ -216,6 +217,9 @@
   .search-bar { max-width: 100%; }
   .filter-cats { gap: 6px; }
   .products-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .hero-accent, .hero-accent-1, .hero-title{
+    font-size: 45px;
+  }
 }
 
 

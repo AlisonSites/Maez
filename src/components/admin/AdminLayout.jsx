@@ -10,7 +10,7 @@ export default function AdminLayout() {
   const navigate = useNavigate()
   const [sideOpen, setSideOpen] = useState(false)
 
-  if (!user || user.email !== 'admin@joiasdokauan.com') {
+  if (!user || user.email !== 'admin@usemaez.com') {
     return (
       <div className="admin-denied">
         <h2>Acesso Negado</h2>
@@ -38,10 +38,10 @@ export default function AdminLayout() {
         <div className="admin-brand">
           <div className="circulo_admin">
             <span>
-              A
+              AM
             </span>
           </div>
-          <span>Admin</span>
+          <span>Admin MAEZ</span>
         </div>
         <nav className="admin-nav">
           {navItems.map(({ to, label, icon: Icon }) => (
@@ -69,8 +69,8 @@ export default function AdminLayout() {
             ☰
           </button>
           <div className="admin-user">
-            <div className="admin-avatar">{user.email[0].toUpperCase()}</div>
-            <span>{user.email}</span>
+            {/* <div className="admin-avatar">{user.email[0].toUpperCase()}</div> */}
+            <span>PORTAL ADMINISTRADOR - SITE MAEZ</span>
           </div>
         </div>
         <div className="admin-content">
